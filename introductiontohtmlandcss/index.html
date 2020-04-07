@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8" content="width=device-width">
 <head>
 	<title>Sign in</title>
 	<style type="text/css">
 		form{
 			margin-top: 100px;
+			margin-left: 35%;
+
 		}
 		input{
-			width: 30%;
-			margin: 8px 0;
-			padding: 8px;
-			box-sizing: border-box;
+			width: 42%;
+			margin:5px;
+			padding: 10px;
+			
 		}
 		button{
 			width: 30%;
@@ -24,6 +25,9 @@
 		a{
 			text-decoration: none;
 			color: white;
+		}
+		p{
+			margin-left: 20%;
 		}
 
 		#f{
@@ -41,29 +45,45 @@
 		#s
 		{
 			background-color: lightblue;
+			width: 45%;
 		}
 		#Forgot{
-			margin-left: -1%;
+			/*margin-left: -1%;*/
 			color: gray;
 		}
 		#reset{
-			margin-left: 15%;
+			/*margin-left: 15%;*/
 			color:gray;
 		}
+	@media (max-width: 600px)
+	{
+		#f,#g,#e,form,p,input,#s
+		{
+			margin-left: 0%;
+			margin-right: 0%;
+			width: 95%;
+
+		}
+		
+			
+	}
 	</style>
+	
+		
 </head>
 <body>
 		
-	<form align=center>
+	<form>
 		<input type="mail" name="username" placeholder="mail@example.com" required=""><br>
 		<input type="password" name="password" placeholder="password" required=""><br>
 
 		<button id="s">SIGN IN</button><br>
 	
-		<a href="" id="Forgot">Forgot your password?</a>
-		<a href="" id="reset">Register!</a><br><br>
+		<a href="" id="Forgot">Forgot your password?     </a>
+		<a href="" id="reset">Register!</a>
+		<p>OR</p>
 	</form>
-		<hr width=30%>
+		
 		<button id="f"><a href="" >Facebook</a></button><br>
 		<button id="g"><a href="" >Google</a></button><br>
 		
