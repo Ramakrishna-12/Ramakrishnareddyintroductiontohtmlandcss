@@ -2,92 +2,19 @@
 <html>
 <head>
 	<title>Sign in</title>
-	<style type="text/css">
-		form{
-			margin-top: 100px;
-			margin-left: 35%;
-
-		}
-		input{
-			width: 42%;
-			margin:5px;
-			padding: 10px;
-			
-		}
-		button{
-			width: 30%;
-			padding: 12px;
-			margin: 10px 0;
-			border-radius: 12px;
-			color: white;
-		}
-
-		a{
-			text-decoration: none;
-			color: white;
-		}
-		p{
-			margin-left: 20%;
-		}
-
-		#f{
-			margin-left: 35%;
-			background-color: blue;
-		}	
-		#e{
-			margin-left: 35%;
-			background-color: lightblue;
-		}
-		#g{
-			margin-left: 35%;
-			background-color: red;
-		}
-		#s
-		{
-			background-color: lightblue;
-			width: 45%;
-		}
-		#Forgot{
-			/*margin-left: -1%;*/
-			color: gray;
-		}
-		#reset{
-			/*margin-left: 15%;*/
-			color:gray;
-		}
-	@media (max-width: 600px)
-	{
-		#f,#g,#e,form,p,input,#s
-		{
-			margin-left: 0%;
-			margin-right: 0%;
-			width: 95%;
-
-		}
-		
-			
-	}
-	</style>
-	
-		
+	<link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-		
-	<form>
+	<div id="hi">
 		<input type="mail" name="username" placeholder="mail@example.com" required=""><br>
 		<input type="password" name="password" placeholder="password" required=""><br>
-
 		<button id="s">SIGN IN</button><br>
-	
-		<a href="" id="Forgot">Forgot your password?</a><br>
-		<a href="" id="reset">Register!</a>
+		<a href="" id="forgot">Forgot your password?</a>
+		<a href="" id="register">Register!</a>
 		<p>OR</p>
-	</form>
-		
 		<button id="f"><a href="" >Facebook</a></button><br>
 		<button id="g"><a href="" >Google</a></button><br>
-		
 		<button  id="e"><a href=""><b>&lt; EPAM LOGIN &gt;</b></a></button>
-	
+	</div>
 </body>
 </html>
